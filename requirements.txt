@@ -12,7 +12,7 @@ matplotlib==3.8.4
 
 # Peta
 folium==0.16.0
-geopandas==0.13.2
 
 # Engine Excel
 openpyxl==3.1.2
+
