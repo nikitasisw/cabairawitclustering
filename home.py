@@ -56,7 +56,7 @@ def app():
 
     # ====== Tombol Unduh Manual Book (PDF) ======
     st.markdown("### Unduh Manual Book")
-    pdf_path = "assets/manual_book.pdf"  # ganti sesuai lokasi PDF kamu
+    pdf_path = "manual_book.pdf"  # ganti sesuai lokasi PDF kamu
 
     if os.path.exists(pdf_path):
         pdf_bytes = load_pdf_bytes(pdf_path)
@@ -72,3 +72,4 @@ def app():
         st.warning(f"File manual tidak ditemukan di: {pdf_path}. Pastikan path dan nama file sudah benar.")
 
     st.caption("Gunakan menu di sebelah kiri untuk menavigasi antara halaman-halaman yang berbeda.")
+
