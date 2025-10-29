@@ -103,12 +103,12 @@ from pathlib import Path
 
 # Path template & dataset contoh (sesuaikan nama file jika beda)
 TEMPLATE_PATHS = {
-    "Provinsi":       str(Path("dataset") / "template_dataset_pertanian_provinsi.xlsx"),
-    "Kabupaten/Kota": str(Path("dataset") / "template_dataset_pertanian_kabupaten.xlsx"),
+    "Provinsi":       str(Path("template_dataset_pertanian_provinsi.xlsx")),
+    "Kabupaten/Kota": str(Path("template_dataset_pertanian_kabupaten.xlsx")),
 }
 DATASET_PATHS = {
-    "Provinsi":       str(Path("dataset") / "dataset_pertanian_provinsi.xlsx"),
-    "Kabupaten/Kota": str(Path("dataset") / "dataset_pertanian_kabupaten.xlsx"),
+    "Provinsi":       str(Path("dataset_pertanian_provinsi.xlsx")),
+    "Kabupaten/Kota": str(Path("dataset_pertanian_kabupaten.xlsx")),
 }
 
 def _load_template_from_path(level: str) -> bytes:
@@ -2089,3 +2089,4 @@ def app():
 
 # if __name__ == "__main__":
 #     app()
+
