@@ -22,7 +22,7 @@ def app():
     c1, c2, c3 = st.columns([1, 6, 1])
     with c2:
         st.image(
-            "assets/cabai rawit.jpg",
+            "cabai rawit.jpg",
             caption="Cabai Rawit",
             use_container_width=False,
             width=620,
@@ -72,4 +72,5 @@ def app():
         st.warning(f"File manual tidak ditemukan di: {pdf_path}. Pastikan path dan nama file sudah benar.")
 
     st.caption("Gunakan menu di sebelah kiri untuk menavigasi antara halaman-halaman yang berbeda.")
+
 
