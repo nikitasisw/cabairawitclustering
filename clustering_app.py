@@ -7,7 +7,7 @@ from pathlib import Path
 st.set_page_config(page_title="Clustering Cabai Rawit", layout="wide")
 
 # =============== LOAD CSS (eksternal + fallback) ===============
-css_path = Path("assets/sidebar.css")
+css_path = Path("sidebar.css")
 if css_path.exists():
     st.markdown(f"<style>{css_path.read_text(encoding='utf-8')}</style>", unsafe_allow_html=True)
 else:
@@ -89,3 +89,4 @@ elif app == 'Harga Cabai Rawit':
 #     user_guide.app()
 elif app == 'Tentang Kami':
     tentang.app()
+
