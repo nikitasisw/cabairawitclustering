@@ -100,12 +100,12 @@ except Exception:
 
 # Path template & dataset contoh (sesuaikan nama file jika beda)
 TEMPLATE_PATHS = {
-    "Provinsi":       str(Path("dataset") / "template_dataset_harga_provinsi.xlsx"),
-    "Kabupaten/Kota": str(Path("dataset") / "template_dataset_harga_kabupaten.xlsx"),
+    "Provinsi":       str(Path("template_dataset_harga_provinsi.xlsx")),
+    "Kabupaten/Kota": str(Path("template_dataset_harga_kabupaten.xlsx")),
 }
 DATASET_PATHS = {
-    "Provinsi":       str(Path("dataset") / "dataset_harga_provinsi.xlsx"),
-    "Kabupaten/Kota": str(Path("dataset") / "dataset_harga_kabupaten.xlsx"),
+    "Provinsi":       str(Path("dataset_harga_provinsi.xlsx")),
+    "Kabupaten/Kota": str(Path("dataset_harga_kabupaten.xlsx")),
 }
 
 def _load_template_from_path(level: str) -> bytes:
@@ -2325,3 +2325,4 @@ def app():
 # Jalankan app() saat file dieksekusi oleh streamlit
 # if __name__ == "__main__":
 #     app()
+
